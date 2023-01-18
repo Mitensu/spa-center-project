@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: $primary-font;
+    color: $primary-text-color;
+}
+
+
+.container-fluid {
+    width: 100%;
+}
+.container {
+    max-width: $small-container;
+    width: $small-container;
+    padding: 0 23px;
+    margin: 0   auto;
+}
+
+@media all and (min-width: $large) {
+    .container {
+        max-width: $large-container;
+    }
+}
+
+@media all and (min-width: $extra-large) {
+    .container {
+        max-width: $extra-large-container;
+    }
+}

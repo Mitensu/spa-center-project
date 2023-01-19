@@ -1,0 +1,112 @@
+.main-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #fff;
+    padding: 12px 0;
+
+    .main-nav-container {
+        @include flexbox;
+        justify-content: space-between;
+    }
+
+    .brand {
+        display: inline-block;
+        height: 50px;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    %mobile-controls {
+        font-size: 28px;
+        line-height: 50px;
+        cursor: pointer;
+    }
+
+    .hamburger {
+        @extend %mobile-controls;
+        color: $primary-color;
+    }
+
+    .mobile-close {
+        @extend %mobile-controls;
+        color: #fff;
+        text-align: right;
+        height: 50px;
+    }
+
+    .open-menu-container {
+        position: fixed;
+        background-color: $primary-color;
+        top: 0;
+        right: 0;
+        max-width: 480px;
+        width: 480px;
+        text-align: right;
+        padding: 12px 23px;
+        display: none;
+
+        &.open {
+            display: block;
+        }
+        
+
+        .menu {
+            list-style: none;
+
+            .menu-item {
+                font-size: 50px;
+                text-transform: uppercase;
+                padding: 20px 0;
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    @media all and (min-width: $large) {
+        
+        .main-nav-container {
+            justify-content: flex-start;
+        }
+
+        .brand {
+            height: 80px;
+        }
+
+        %mobile-controls {
+            display: none;
+        }
+
+        .open-menu-container {
+            display: block;
+            position: static;
+            background-color: transparent;
+            width: auto;
+            max-width: 100%;
+            padding: 0;
+            align-self: flex-start;
+
+            .menu {
+                background-color: #fff;
+
+                .menu-item {
+                    display: inline-block;
+                    margin: 0 20px;
+                    font-size: initial;
+
+                    a {
+                        color: $secondary-color;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+
+}

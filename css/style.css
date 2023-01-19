@@ -260,10 +260,103 @@ body {
 @media all and (min-width: 992px) {
   .container {
     max-width: 960px;
+    width: 960px;
   }
 }
 @media all and (min-width: 1200px) {
   .container {
     max-width: 1140px;
+    width: 1140px;
+  }
+}
+.main-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #fff;
+  padding: 12px 0;
+}
+.main-nav .main-nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main-nav .brand {
+  display: inline-block;
+  height: 50px;
+}
+.main-nav .brand img {
+  height: 100%;
+}
+.main-nav .mobile-close, .main-nav .hamburger {
+  font-size: 28px;
+  line-height: 50px;
+  cursor: pointer;
+}
+.main-nav .hamburger {
+  color: #1ba4ce;
+}
+.main-nav .mobile-close {
+  color: #fff;
+  text-align: right;
+  height: 50px;
+}
+.main-nav .open-menu-container {
+  position: fixed;
+  background-color: #1ba4ce;
+  top: 0;
+  right: 0;
+  max-width: 480px;
+  width: 480px;
+  text-align: right;
+  padding: 12px 23px;
+  display: none;
+}
+.main-nav .open-menu-container.open {
+  display: block;
+}
+.main-nav .open-menu-container .menu {
+  list-style: none;
+}
+.main-nav .open-menu-container .menu .menu-item {
+  font-size: 50px;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+.main-nav .open-menu-container .menu .menu-item a {
+  color: #fff;
+  text-decoration: none;
+}
+@media all and (min-width: 992px) {
+  .main-nav .main-nav-container {
+    justify-content: flex-start;
+  }
+  .main-nav .brand {
+    height: 80px;
+  }
+  .main-nav .hamburger, .main-nav .mobile-close {
+    display: none;
+  }
+  .main-nav .open-menu-container {
+    display: block;
+    position: static;
+    background-color: transparent;
+    width: auto;
+    max-width: 100%;
+    padding: 0;
+    align-self: flex-start;
+  }
+  .main-nav .open-menu-container .menu {
+    background-color: #fff;
+  }
+  .main-nav .open-menu-container .menu .menu-item {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: initial;
+  }
+  .main-nav .open-menu-container .menu .menu-item a {
+    color: #473452;
+    font-weight: 700;
   }
 }/*# sourceMappingURL=style.css.map */

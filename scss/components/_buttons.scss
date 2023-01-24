@@ -25,3 +25,16 @@
         background-color: $primary-color;
     }
 }
+
+.btn-form {
+    @extend %btn;
+    background-color: #fff;
+    color: $secondary-color;
+    font-weight: 700;
+
+    &:hover {
+        background-color: $button-color;
+        color: #fff;
+    }
+
+}

@@ -400,15 +400,18 @@ section .section-header p {
   }
   .main-nav .open-menu-container .menu {
     background-color: #fff;
+    list-style: none;
   }
   .main-nav .open-menu-container .menu .menu-item {
     display: inline-block;
     margin: 0 20px;
     font-size: initial;
+    text-transform: uppercase;
   }
   .main-nav .open-menu-container .menu .menu-item a {
     color: #473452;
     font-weight: 700;
+    text-decoration: none;
   }
 }
 
@@ -671,6 +674,33 @@ section .section-header p {
 }
 .contact .contact-form {
   padding: 25px 0;
+}
+
+.main-footer {
+  text-align: center;
+  padding: 30px 0;
+}
+.main-footer img {
+  width: 100px;
+}
+.main-footer .footer-nav .menu {
+  background-color: #fff;
+  list-style: none;
+  padding: 20px 0;
+  margin-bottom: 40px;
+}
+.main-footer .footer-nav .menu .menu-item {
+  display: inline-block;
+  margin: 0 20px;
+  font-size: initial;
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+.main-footer .footer-nav .menu .menu-item a {
+  color: #835285;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0 20px;
 }
 
 .btn-form, .btn-secondary, .btn-primary {

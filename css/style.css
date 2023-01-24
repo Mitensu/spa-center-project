@@ -603,7 +603,7 @@ section .section-header p {
   background-color: #1ba4ce;
 }
 
-.card {
+.team-card, .card {
   padding: 0 10px;
   margin-top: 30px;
   text-align: center;
@@ -623,4 +623,51 @@ section .section-header p {
 .card .inner-card p {
   font-weight: 300;
   margin-bottom: 30px;
+}
+
+.team-card {
+  margin-top: 60px;
+  position: relative;
+}
+.team-card img {
+  width: 100%;
+}
+.team-card .team-card-info {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80%;
+  bottom: -50px;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+.team-card .team-card-info:hover {
+  box-shadow: 0 5px 20px #f0f0f0;
+  padding-bottom: 30px;
+}
+.team-card .team-card-info:hover .team-social-icon {
+  height: 35px;
+}
+.team-card .team-card-info .team-social-icon {
+  transition: all 0.3s;
+  height: 0;
+  overflow: hidden;
+}
+.team-card .team-card-info .team-social-icon a {
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #473452;
+  color: #473452;
+  margin: 0 10px;
+}
+.team-card .team-card-info .team-social-icon a:hover {
+  border: 1px solid #1ba4ce;
+  color: #fff;
+  background-color: #1ba4ce;
 }/*# sourceMappingURL=style.css.map */

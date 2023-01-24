@@ -1,0 +1,19 @@
+.row {
+    @include flexbox;
+}
+
+.col {
+    width: 100%;
+}
+
+@media all and (min-width: $medium) {
+    .col-md-6 {
+        width: 50%;
+    }
+}
+
+@media all and (min-width: $large) {
+    .col-lg-3 {
+        width: 25%;
+    }
+}

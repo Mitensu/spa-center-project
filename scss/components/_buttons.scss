@@ -16,3 +16,12 @@
         background-color: $button-color;
     }
 }
+
+.btn-secondary {
+    @extend %btn;
+    background-color: $button-color;
+
+    &:hover {
+        background-color: $primary-color;
+    }
+}

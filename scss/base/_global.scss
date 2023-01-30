@@ -69,6 +69,16 @@ section {
     }
 }
 
+@media all and (min-width: $medium) {
+    .container {
+        max-width: none;
+        width: $medium;
+    }
+    .h3-md {
+        margin-bottom: 47px;
+    }
+}
+
 @media all and (min-width: $large) {
     .container {
         max-width: $large-container;
@@ -78,6 +88,10 @@ section {
     section {
         padding: 60px 0;
     }
+    .h3-md {
+        margin: 1em 0;
+    }
+
 }
 
 @media all and (min-width: $extra-large) {

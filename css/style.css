@@ -305,6 +305,15 @@ section .section-header p {
     width: 100%;
   }
 }
+@media all and (min-width: 768px) {
+  .container {
+    max-width: none;
+    width: 768px;
+  }
+  .h3-md {
+    margin-bottom: 47px;
+  }
+}
 @media all and (min-width: 992px) {
   .container {
     max-width: 960px;
@@ -312,6 +321,9 @@ section .section-header p {
   }
   section {
     padding: 60px 0;
+  }
+  .h3-md {
+    margin: 1em 0;
   }
 }
 @media all and (min-width: 1200px) {
@@ -605,6 +617,18 @@ section .section-header p {
   width: 100%;
   background-color: #1ba4ce;
   padding: 80px 40px;
+}
+.appointment form .appointment-message {
+  width: 100%;
+  display: none;
+}
+.appointment form .appointment-message.error {
+  color: red;
+  display: block;
+}
+.appointment form .appointment-message.send {
+  display: block;
+  color: #fff;
 }
 @media all and (min-width: 992px) {
   .appointment .appointment-background {
